@@ -309,6 +309,17 @@ header .hero img {
    width:auto;
    margin:0;
  }
+ .testimonials blockquote.staggered {
+    color:#000000;
+    text-align: left;
+    font-style: italic;
+    background:#E7FB3B;
+    position: relative;
+    padding:30px;
+    width:auto;
+    margin-top: 20px;
+  }
+
  .testimonials blockquote:after {
    top: 100%;
    left: 13%;
