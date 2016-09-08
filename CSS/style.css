@@ -46,6 +46,10 @@ p {
   margin: 0 2% 20px;
 }
 
+nav.link-block.middle-footer-block.one-third {
+  white-space: nowrap;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -457,12 +461,13 @@ footer .logo{
  /* LEFT NAVBAR SETTINGS */
  .left-nav .settings {
    position:relative;
-   background:#E7FB3B;
+   background:#d6ec11;
    width:100%;
    top:100;
    left:0;
    right:0;
-   padding:10px 0;
+   padding-top:10px;
+   padding-bottom: 7px;
  }
  .left-nav .settings img {
    height:35px;
@@ -476,13 +481,14 @@ footer .logo{
    vertical-align: top;
    padding-top: 8px;
    font-weight: 400;
-   margin:0 0 0 10px;
+   margin:0 0 0 5px;
  }
  .left-nav .settings a {
    color:#000000;
    text-decoration: none;
    text-align: right;
-   float: right;
+   /*float: right;*/
+   margin-left: 5px;
    margin-right:10px;
    margin-top:8px;
  }
@@ -619,4 +625,8 @@ footer .logo{
 
  .active {
    background-color: #ffffff;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   margin-bottom: 10px;
+
  }
