@@ -24,7 +24,18 @@
     <a href="dashboard.html" class="site-logo"><img src="Images/site-logo.png" /></a>
     <div class="settings">
     <img src="https://s3.amazonaws.com/uifaces/faces/twitter/nettatheninja/128.jpg">
-    <p>Netta Marshall <a href="#"><i class="fa fa-cog"></i></a></p>
+    <p>Netta Marshall</p>
+    <ul class="menu" style="margin-top: 10px;">
+      <li>
+        <a href="#"><i class="fa fa-cog"></i></a></p>
+        <ul style="width: 145px;">
+            <li><a href="#"><i class="fa fa-cog"></i> Account Settings</a></li>
+            <li><a href="#"><i class="fa fa-group"></i> Collaborators</a></li>
+            <li><a href="#"><i class="fa fa-sign-out"></i> Sign Out</a></li>
+        </ul>
+      </li>
+    </ul>
+    <!-- <a href="#"><i class="fa fa-cog"></i></a> -->
   </div>
     <div class="items" style="padding-right: 0px; padding-left: 0px;">
       <p style="margin-left: 15px;">Items</p>
@@ -48,7 +59,16 @@
      <div class="container">
        <div class="header">
          <h1>Images</h1>
-         <a href="#" class="dashboard-btn">+ Add</a>
+         <ul class="menu">
+           <li>
+             <a href="#" class="dashboard-btn">+ Add</a>
+             <ul>
+                 <li><a href="#"><i class="fa fa-file-o"></i> Note</a></li>
+                 <li><a href="#"><i class="fa fa-picture-o"></i> Image</a></li>
+                 <li><a href="#"><i class="fa fa-link"></i> Link</a></li>
+             </ul>
+           </li>
+         </ul>
        </div>
      </div>
      <div class="container">
@@ -118,5 +138,11 @@
  </main>
  <script src="JS/jquery-3.1.0.min.js"></script>
  <script src="JS/dropit.js"></script>
+ <script type="text/javascript">
+    $(".menu").dropit();
+    $( "#menu" ).click(function() {
+         $("#left-nav").toggleClass("open", 200);
+     });
+  </script>
 </body>
 </html>
